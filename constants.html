@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constants</title>
+</head>
+<body>
+    <h1 id="myh1">enter the radius</h1>
+    <label>radius:</label>
+    <button id="mysubmit">submit</button>
+<input type="text" id="mytext">
+<h3 id="myh3"></h3>
+
+<script>
+let pi=3.14159;
+let radius;
+let circumference;
+
+document.getElementById("mysubmit").onclick=function(){
+    radius=document.getElementById("mytext").value;
+    radius=Number(radius);
+circumference=2*pi*radius;
+    document.getElementById("myh3").textContent = circumference+"cm";
+ 
+}
+
+
+
+</script>
+</body>
+</html>
